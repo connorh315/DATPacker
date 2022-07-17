@@ -3,24 +3,61 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DATPacker", "DATPacker.csproj", "{2671BEF1-95CF-4DCF-8398-FC4F9161AABD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DATPacker", "DATPacker.csproj", "{2671BEF1-95CF-4DCF-8398-FC4F9161AABD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3E88F286-F4E1-4294-9CFA-43D27C6F4B78} = {3E88F286-F4E1-4294-9CFA-43D27C6F4B78}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DATPack", "..\DATPack\DATPack.csproj", "{3E88F286-F4E1-4294-9CFA-43D27C6F4B78}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DATExtract", "..\DATExtract\DATExtract\DATExtract.csproj", "{466D5E24-5270-4ED8-9342-136BD3ECDC45}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Build|Any CPU = Build|Any CPU
+		Build|x64 = Build|x64
 		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
 		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2671BEF1-95CF-4DCF-8398-FC4F9161AABD}.Build|Any CPU.ActiveCfg = Release|Any CPU
+		{2671BEF1-95CF-4DCF-8398-FC4F9161AABD}.Build|Any CPU.Build.0 = Release|Any CPU
+		{2671BEF1-95CF-4DCF-8398-FC4F9161AABD}.Build|x64.ActiveCfg = Release|x64
+		{2671BEF1-95CF-4DCF-8398-FC4F9161AABD}.Build|x64.Build.0 = Release|x64
 		{2671BEF1-95CF-4DCF-8398-FC4F9161AABD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2671BEF1-95CF-4DCF-8398-FC4F9161AABD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2671BEF1-95CF-4DCF-8398-FC4F9161AABD}.Debug|x64.ActiveCfg = Debug|x64
+		{2671BEF1-95CF-4DCF-8398-FC4F9161AABD}.Debug|x64.Build.0 = Debug|x64
 		{2671BEF1-95CF-4DCF-8398-FC4F9161AABD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2671BEF1-95CF-4DCF-8398-FC4F9161AABD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2671BEF1-95CF-4DCF-8398-FC4F9161AABD}.Release|x64.ActiveCfg = Release|x64
+		{2671BEF1-95CF-4DCF-8398-FC4F9161AABD}.Release|x64.Build.0 = Release|x64
+		{3E88F286-F4E1-4294-9CFA-43D27C6F4B78}.Build|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E88F286-F4E1-4294-9CFA-43D27C6F4B78}.Build|Any CPU.Build.0 = Debug|Any CPU
+		{3E88F286-F4E1-4294-9CFA-43D27C6F4B78}.Build|x64.ActiveCfg = Release|x64
+		{3E88F286-F4E1-4294-9CFA-43D27C6F4B78}.Build|x64.Build.0 = Release|x64
 		{3E88F286-F4E1-4294-9CFA-43D27C6F4B78}.Debug|Any CPU.ActiveCfg = Release|Any CPU
 		{3E88F286-F4E1-4294-9CFA-43D27C6F4B78}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{3E88F286-F4E1-4294-9CFA-43D27C6F4B78}.Debug|x64.ActiveCfg = Debug|x64
+		{3E88F286-F4E1-4294-9CFA-43D27C6F4B78}.Debug|x64.Build.0 = Debug|x64
 		{3E88F286-F4E1-4294-9CFA-43D27C6F4B78}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3E88F286-F4E1-4294-9CFA-43D27C6F4B78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E88F286-F4E1-4294-9CFA-43D27C6F4B78}.Release|x64.ActiveCfg = Release|x64
+		{3E88F286-F4E1-4294-9CFA-43D27C6F4B78}.Release|x64.Build.0 = Release|x64
+		{466D5E24-5270-4ED8-9342-136BD3ECDC45}.Build|Any CPU.ActiveCfg = Build|Any CPU
+		{466D5E24-5270-4ED8-9342-136BD3ECDC45}.Build|Any CPU.Build.0 = Build|Any CPU
+		{466D5E24-5270-4ED8-9342-136BD3ECDC45}.Build|x64.ActiveCfg = Build|x64
+		{466D5E24-5270-4ED8-9342-136BD3ECDC45}.Build|x64.Build.0 = Build|x64
+		{466D5E24-5270-4ED8-9342-136BD3ECDC45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{466D5E24-5270-4ED8-9342-136BD3ECDC45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{466D5E24-5270-4ED8-9342-136BD3ECDC45}.Debug|x64.ActiveCfg = Debug|x64
+		{466D5E24-5270-4ED8-9342-136BD3ECDC45}.Debug|x64.Build.0 = Debug|x64
+		{466D5E24-5270-4ED8-9342-136BD3ECDC45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{466D5E24-5270-4ED8-9342-136BD3ECDC45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{466D5E24-5270-4ED8-9342-136BD3ECDC45}.Release|x64.ActiveCfg = Release|x64
+		{466D5E24-5270-4ED8-9342-136BD3ECDC45}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

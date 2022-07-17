@@ -11,6 +11,12 @@ namespace DATPacker
             SelectFolderButton.Image = IconExtractor.Extract(@"shell32.dll", 45, false).ToBitmap();
 
             SelectFileButton.Image = IconExtractor.Extract(@"shell32.dll", 258, false).ToBitmap();
+
+            SelectPatchButton.Image = IconExtractor.Extract(@"shell32.dll", 45, false).ToBitmap();
+
+            //Patch.CheckSet();
+
+            Console.WriteLine("Please read the Github README: https://github.com/connorh315/datpacker before continuing!");
         }
 
         private void textBox1_DragDrop(object sender, DragEventArgs e)
@@ -60,14 +66,42 @@ namespace DATPacker
 
         private void PackDAT()
         {
-            Pack.PackFromFolder(FolderTextBox.Text, ArchiveType.LegoDimensions, FileTextBox.Text);
+            string[] files = Pack.PackFromFolder(FolderTextBox.Text, ArchiveType.LegoDimensions, FileTextBox.Text);
+
+            //if (PatchTextBox.Text != "")
+            //{
+            //    Pack.PatchFromFolder(PatchTextBox.Text, new string[0]);
+            //}
+            //else
+            //{
+            //    Console.WriteLine("No existing archives were edited, as a patch location was not given.");
+            //}
         }
+
+        private Thread packThread;
 
         private void button1_MouseClick(object sender, MouseEventArgs e)
         {
-            Thread newThread = new Thread(PackDAT);
-            newThread.Start();
-            
+            if (packThread == null)
+            {
+                packThread = new Thread(PackDAT);
+                packThread.Start();
+            }
+            else if (packThread.ThreadState != ThreadState.Running)
+            {
+                packThread.Start();
+            }
+
+            MessageBox.Show("Please see console for progress.", "Progress", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void SelectPatchButton_MouseClick(object sender, MouseEventArgs e)
+        {
+            var dialog = new FolderPicker();
+            if (dialog.ShowDialog(Handle) == true)
+            {
+                PatchTextBox.Text = dialog.ResultPath;
+            }
         }
     }
 }
