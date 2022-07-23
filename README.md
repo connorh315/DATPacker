@@ -1,24 +1,19 @@
 # DATPacker
 
-Builds TTGames archives from a folder.
+Builds and manages Lego Dimensions archives.
 
-# PLEASE READ
+# Introduction
 
-This tool currently has the following limitations:
+I've had a wanting to mod Lego Dimensions for a while now, but it has one major problem... It was only ever released for consoles.
 
-- Can only create first year, LEGO Dimensions DAT files (NOT DLC, NOT PATCH FILES - BASE GAME FILES ONLY!)
+Modding PC games is easy as the executables can be easily modified and the files can be drag-and-dropped for most games; Consoles - not so much.
 
-# How to use
+Lego Dimensions can't be run extracted, which is what most modding of Lego games does. This means that the executable will have to be modified (again not easy) or the custom archives need to be created from scratch - This is where DATPacker comes in.
 
-Ensure you have .NET 6.0 installed, and download the latest release of DATPacker from GitHub.
+DATPacker extracts the existing Lego Dimensions archives into one big folder, but remembers which files came from which archive. When it comes to rebuilding it, DATPacker puts the right files into the right archives, and fills in the gaps. This "overwatch" procedure means that files don't need to be separated based on the archive they come from (which is necessary as certain game files need to go into certain folders) but will hopefully help any new modders get started.
 
-Open the program and select the folder that you wish to build an archive from.
+# Instructions
 
-Select the output file location and click build.
+Initial setup can be quite technical, so individual guides are written up here:
 
-This sounds easy, but there are many caveats:
-
-- Do not place the same file in multiple archives, i.e. do not place STUFF\TEXT.CSV in both GAME.DAT and GAME0.DAT. This means that if you want to update a file already in an archive, you will need to unpack that archive (using either QuickBMS or DATManager) and rebuild and replace that archive with your updated build.
-- If a PATCH.DAT file is being used with your game, any files in that will take priority over any you update in the original GAME archives.
-- No compression is currently being applied (this doesn't make a significant difference as Dimensions hardly used any either).
-- Has only been tested on Cemu, if this works on original consoles, or emulators... Let me know!
+[Guides](https://github.com/connorh315/DATPacker/tree/master/Guides)

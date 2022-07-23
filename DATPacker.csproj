@@ -10,8 +10,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\DATExtract\DATExtract\DATExtract.csproj" />
+    <ProjectReference Include="..\HProjectLib\HProjectLib.csproj" />
+    <ProjectReference Include="..\ModLib\ModLib.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Reference Include="DATPack">
-      <HintPath>..\DATPack\bin\Release\net6.0\DATPack.dll</HintPath>
+      <HintPath>..\DATPack\bin\x64\Release\net6.0\DATPack.dll</HintPath>
     </Reference>
   </ItemGroup>
 
