@@ -14,25 +14,25 @@ And download DATPacker:
 
 # Steps
 
-1. Open DATPacker, click on Project->New and fill in all fields explained below:
+**1.** Open DATPacker, click on Project->New and fill in all fields explained below:
 
-- Project name: A name for your project, could be anything from "My Dimensions Project" to "Stranger Things Mod"
-- DAT archive folder: This is the folder containing all of your GAME.DAT files (should be GAME.DAT through to GAME9.DAT)
-- Build folder: This is where DATPacker will build your archives to. I'd suggest that you set this to be where CEMU holds the GAME.DAT files, that way you won't need to move them every time you rebuild them.
-- Update folder: This is the folder containing all of your PATCH.DAT files (These are update files for the game, it is very important that you include this folder if you have the updates running, otherwise Dimensions will refuse your custom files).
-- Output folder: This is where DATPacker will extract all of your files to, you should probably choose an empty folder for this.
+- **Project name**: A name for your project, could be anything from "My Dimensions Project" to "Stranger Things Mod"
+- **DAT archive folder**: This is the folder containing all of your GAME.DAT files (should be GAME.DAT through to GAME9.DAT)
+- **Build folder**: This is where DATPacker will build your archives to. I'd suggest that you set this to be where CEMU holds the GAME.DAT files, that way you won't need to move them every time you rebuild them.
+- **Update folder**: This is the folder containing all of your PATCH.DAT files (These are update files for the game, it is very important that you include this folder if you have the updates running, otherwise Dimensions will refuse your custom files).
+- **Output folder**: This is where DATPacker will extract all of your files to, you should probably choose an empty folder for this.
 
-2. Once you have entered all of the project info, click on "Create project". This will begin extracting all of the files into your chosen Output folder and will also place a project file (.hprj) there too.
+**2.** Once you have entered all of the project info, click on "Create project". This will begin extracting all of the files into your chosen Output folder and will also place a project file (.hprj) there too.
 
-3. Wait until you receive a message that all archives have been extracted. You could wait a few minutes on an NVME drive, up to 10 minutes on a SATA SSD, or up to 20 minutes on the average hard drive.
+**3.** Wait until you receive a message that all archives have been extracted. You could wait a few minutes on an NVME drive, up to 10 minutes on a SATA SSD, or up to 20 minutes on the average hard drive.
 
-4. If your PATCH.DAT archives were inside of a CEMU game directory, move them out now. If you are unsure, go to your CEMU directory, and search for PATCH.DAT. If you have it, move it to your Desktop or somewhere safe.
+**4.** If your PATCH.DAT archives were inside of a CEMU game directory, move them out now. If you are unsure, go to your CEMU directory, and search for PATCH.DAT. If you have it, move it to your Desktop or somewhere safe.
 
-5. When prompted, rebuild all archives. This will place the archives in your chosen Build folder, so move them to the CEMU game directory if necessary.
+**5.** When prompted, rebuild all archives. This will place the archives in your chosen Build folder, so move them to the CEMU game directory if necessary.
 
-6. Wait for the rebuild to complete, and then open CEMU and test to make sure everything still works. If it does, we can do one final test to see if CEMU is now using our custom archives:
+**6.** Wait for the rebuild to complete, and then open CEMU and test to make sure everything still works. If it does, we can do one final test to see if CEMU is now using our custom archives:
 
-7. Edit chars\collection.txt and swap the portal_model_id of two characters. I changed Wyldstyle's portal_model_id 3 to be portal_model_id 21, and then changed Homer Simpson's portal_model_id 21 to be portal_model_id 3. This means that placing Wyldstyle on the portal should spawn Homer, and vice versa.
+**7.** Edit chars\collection.txt and swap the portal_model_id of two characters. I changed Wyldstyle's portal_model_id 3 to be portal_model_id 21, and then changed Homer Simpson's portal_model_id 21 to be portal_model_id 3. This means that placing Wyldstyle on the portal should spawn Homer, and vice versa.
 
 If you could get Homer Simpson to show up instead of Wyldstyle, then congrats, you're free to start modding, just read the section "Important Notes" below though.
 
